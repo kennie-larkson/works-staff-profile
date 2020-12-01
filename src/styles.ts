@@ -12,7 +12,7 @@ border: 0;
 `
 
 
-export const AppStyle = styled.div`
+export const AppContainer = styled.div`
 background-color: maroon;
 color: whitesmoke;
 text-align: center;
@@ -48,15 +48,7 @@ padding: 0;
 background-color: black;
 `
 
-// export const NavlinkStyle = styled.nav`
-// padding: 2px;
-// margin: 2px;
-// font-size: 16px;
-// font-weight: bold;
-// border: 0.2px solid black;
-// border-radius: 5px;
-// text-decoration: none;
-// `
+
 
 export const ListStyle = styled.li`
 display: inline ;
