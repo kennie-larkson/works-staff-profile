@@ -45,9 +45,16 @@ justify-content: center;
 
 
 export const AppContainer = styled.div`
-background-color: maroon;
-color: whitesmoke;
-text-align: center;
+    display: flex;
+  // align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #3179ba;
+  // height: 100%;
+  padding: 20px;
+  width: 100%;
+  flex-wrap: wrap;
 `
 
 export const CardStyle = styled.div`
@@ -60,15 +67,20 @@ margin: 0.5em;
 line-height: 3;
 `
 
-export const CardContainer = styled.div`
-//display: grid;
-//grid-template-columns: 1fr 1fr;
-padding: 1em;
-// width: 100%;
-margin-top: 1em;
-text-align: center;
-justify-content: center;
-// border: 2px solid white;
+
+
+export const CardContainer = styled.article`
+    padding: 5px 5px;
+    margin-right: 2px;
+    background-color: #ebecf0;
+    width: 300px;
+    min-height: 40px;
+    border-radius: 3px;
+    flexGrow: 0,
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+    font-family: Quicksand, sans-serif;
 `
 
 export const NavbarStyle = styled.ul`
