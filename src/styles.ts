@@ -11,6 +11,38 @@ width: 100px;
 border: 0;
 `
 
+export const HeadingContainer = styled.header`
+font-size: 25px;
+font-weight: bold;
+text-align: center;
+font-family: Noto Sans JP, sans-serif;
+`
+
+export const ImageContainer = styled.img`
+width: 200px;
+min-height: 200px;
+border-radius: 100%;
+margin-bottom: 5px;
+background-color: #ebecf0;
+border: 2px solid #3179ba;
+`
+
+export const StaffListContainer = styled.section`
+padding: 15px 15px;
+margin-right: 5px;
+margin-bottom: 5px;
+background-color: #ffffff;
+width: 400px;
+min-height: 40px;
+border-radius: 3px;
+flex-grow: 0;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+justify-content: center;
+`
+
 
 export const AppContainer = styled.div`
 background-color: maroon;
