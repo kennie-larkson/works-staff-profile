@@ -27,7 +27,7 @@ background-color: #ebecf0;
 border: 2px solid #3179ba;
 `
 
-export const StaffListContainer = styled.section`
+export const StaffContainer = styled.section`
 padding: 15px 15px;
 margin-right: 5px;
 margin-bottom: 5px;
@@ -43,6 +43,19 @@ align-items: center;
 justify-content: center;
 `
 
+export const StaffListContainer = styled.div`
+
+display: flex;
+// align-items: flex-start;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+background-color: #3179ba;
+// height: 100%;
+padding: 20px;
+width: 100%;
+flex-wrap: wrap;
+`
 
 export const AppContainer = styled.div`
     display: flex;
@@ -57,17 +70,18 @@ export const AppContainer = styled.div`
   flex-wrap: wrap;
 `
 
-export const CardStyle = styled.div`
-border: 0.1em solid whitesmoke;
-border-radius: 0.2em;
-//padding-left: 1em;
-// width: 30%;
-margin: 0.5em;
-// font-weight: bold;
-line-height: 3;
+export const FormContainer = styled.form`
+display: flex;
+flex-direction: column;
+background-color: #ebecf0;
+width: 100%;
+padding: 20px;
+justify-content: center;
+align-items: center;
+margin-right: 45px;
+margin-left: 45px;
+border-radius: 5px;
 `
-
-
 
 export const CardContainer = styled.article`
     padding: 5px 5px;
@@ -83,6 +97,17 @@ export const CardContainer = styled.article`
     font-family: Quicksand, sans-serif;
 `
 
+export const FormHeaderStyle = styled.h1`
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+    font-family: Quicksand, sans-serif;
+`
+export const InputFieldStyle = styled.div`
+padding: 2px;
+
+`
+
 export const NavbarStyle = styled.ul`
 list-style-type: none;
 display: flex;
@@ -91,8 +116,6 @@ margin: 0;
 padding: 0; 
 background-color: black;
 `
-
-
 
 export const ListStyle = styled.li`
 display: inline ;

@@ -1,12 +1,13 @@
 import React from "react";
 import { CardContainer } from "../styles";
 
-interface cardProps {
+interface CardProps {
     bio: string;
     rank: string;
+    unit?: string;
 };
 
-const Card = ({ bio, rank }: cardProps) => {
+const Card = ({ bio, rank, unit }: CardProps) => {
 
     return (
         <>
@@ -14,6 +15,7 @@ const Card = ({ bio, rank }: cardProps) => {
 
                 <p>{bio}</p>
                 <p>{rank}</p>
+                <p>{unit}</p>
 
             </CardContainer>
         </>

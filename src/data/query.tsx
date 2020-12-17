@@ -1,6 +1,6 @@
 import React from "react";
 // import { gql, useQuery } from "@apollo/client";
-import { gql} from "@apollo/client";
+import { gql, useQuery } from "@apollo/client";
 
 
 export const query = gql`
@@ -16,12 +16,15 @@ query {
 }
 `
 
-// export const useGetQuery = () => {
-//     const {loading, data} = useQuery(query);
-    
-//     if(loading) return <p>Loading staff data...</p>;
+export const useGetQuery = () => {
 
-//     console.log(data);
-    
-    
-// };
+    const { loading, error, data } = useQuery(query);
+
+    if (loading) return <p>Loading staff data...</p>;
+    if (error) return `Error: ${error.message}`;
+    const response = data.getStaffs
+    // console.log();
+    return response;
+
+};
+
