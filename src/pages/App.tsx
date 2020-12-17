@@ -20,6 +20,10 @@ const App = () => {
 
   useEffect(() => {
     if (data) console.log(data);
+    // setStaffs((staffs)=> {
+    //   return [...staffs, data]
+    // }
+  
 
   }, [data]);
 
